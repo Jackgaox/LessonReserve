@@ -28,6 +28,7 @@ exports.main = async (event, context) => {
         message: event.message,
         phone_number: event.phone_number,
         student_name: event.student_name,
+        reserve_status: event.reserve_status,
         reserve_date: event.reserve_date,
         revoke_reason: event.revoke_reason,
         reserve_date: event.reserve_date,

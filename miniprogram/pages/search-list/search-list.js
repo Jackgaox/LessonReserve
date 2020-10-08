@@ -1,4 +1,9 @@
 // miniprogram/pages/searchlist/search-list.js
+import {
+  formatTime,
+  validInput,
+  stringConvert
+} from '../../utils/util.js'
 let MAX_LIMIT = 10
 Page({
   /**
@@ -42,6 +47,7 @@ Page({
           if (lessonlist[i].description.length > 70) {
             lessonlist[i].description = lessonlist[i].description.substr(0, 60) + "..."
           }
+          lessonlist[i].description = stringConvert(lessonlist[i].description)
         }
         this.setData({
           lessonlist: this.data.lessonlist.concat(lessonlist)
@@ -75,6 +81,7 @@ Page({
         if (item.banner_lessons[0].description.length > 70) {
           item.banner_lessons[0].description = item.banner_lessons[0].description.substr(0, 60) + "..."
         }
+        item.banner_lessons[0].description = stringConvert(item.banner_lessons[0].description)
         lessonlist.push(item.banner_lessons[0])
       }
 
