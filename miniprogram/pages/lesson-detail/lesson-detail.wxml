@@ -1,0 +1,52 @@
+<view class="container">
+  <image class="head-img" src="{{lessonData.cover_cloudid}}" mode="scaleToFill" />
+  <view class="summary">
+    <view class="original-title">
+      {{lessonData.lesson_name}}
+    </view>
+    <view class="flex-row">
+      <text class="mark">讲师：</text>
+      <text class="mark_text">{{lessonData.lecturer}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">日期：</text>
+      <text class="mark_text">{{lessonData.create_date}}</text>
+    </view>
+    <view class="flex-row">
+      <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{classList}}">
+          <view class="mark">
+            班级选择：{{classList[index]?classList[index]:'尚无可选班次'}}
+            <span class="triangle" />
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view wx:if="{{classList[index]}}" class="flex-row">
+      <text class="mark">已报名人数：</text>
+      <text class="mark_text">{{reserved_count===''?'加载中':reserved_count}}</text>
+    </view>
+        <view wx:if="{{classList[index]}}" class="flex-row">
+      <text class="mark">限制人数：</text>
+      <text class="mark_text">{{num_limit}}</text>
+    </view>
+    <view wx:if="{{start_date}}" class="flex-row">
+      <text class="mark">开始日期：</text>
+      <text class="mark_text">{{start_date}}</text>
+    </view>
+    <view wx:if="{{end_date}}" class="flex-row">
+      <text class="mark">结束日期：</text>
+      <text class="mark_text">{{end_date}}</text>
+    </view>
+  </view>
+  <view class="synopsis">
+    <text class="synopsis-font">课程简介</text>
+    <text class="summary-content">{{lessonData.description}}</text>
+  </view>
+</view>
+<view>
+  <button bind:getuserinfo="toReservePage" open-type='getUserInfo' class="main-button normal-flex" hover-class="none" style="color: white;background-color:#2a7185 ;" data-lesson_name="{{lessonData.lesson_name}}" data-_id="{{lessonData._id}}" data-cover_cloudid="{{lessonData.cover_cloudid}}">
+    立即预定
+  </button>
+</view>

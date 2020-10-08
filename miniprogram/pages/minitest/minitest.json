@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "l-popup": "/miniprogram_npm/lin-ui/popup/index"
+  }
+}

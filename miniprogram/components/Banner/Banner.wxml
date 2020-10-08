@@ -1,0 +1,14 @@
+<block wx:for="{{list}}" wx:key="_id">
+  <view class="inner-container">
+    <view class="lesson-head">
+      <text class="slogan">{{item.banner_name}}</text>
+      <view catchtap="onMoreTap" class="more" data-_id="{{item._id}}">
+        <text class="more-text">更多</text>
+        <text class="right-arrow" />
+      </view>
+    </view>
+    <view class="lessons-container">
+      <x-unitlesson _id="{{item._id}}"/>
+    </view>
+  </view>
+</block>

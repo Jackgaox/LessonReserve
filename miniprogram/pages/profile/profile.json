@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "v-button": "/components/image-button/index",
+    "l-avatar": "/miniprogram_npm/lin-ui/avatar/index",
+    "l-popup": "/miniprogram_npm/lin-ui/popup/index"
+  },
+  "navigationBarTitleText": "我的",
+  "disableScroll": true
+}

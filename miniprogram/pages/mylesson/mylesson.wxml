@@ -1,0 +1,25 @@
+<view class="grid-container">
+  <block wx:for="{{mylessonlist}}" wx:key="_id">
+    <view class="single-view-container">
+      <view class="lesson-container" catchtap="onlessonTap" data-_id="{{item._id}}">
+        <image class="lesson-img" src="{{item.lesson_info[0].cover_url}}"></image>
+        <view class="content-block">
+          <text class="lesson-title">{{item.lesson_name}}</text>
+          <text class="lesson-content">{{item.lesson_info[0].description}}</text>
+          <view class="content-row">
+            <text class="float-left">主讲人：{{item.lesson_info[0].lecturer}}</text>
+            <text class="float-right">班次：{{item.class_name}}</text>
+          </view>
+          <view wx:if="{{item.reserve_date}}" class="content-row">
+            <text class="float-left">预约时间：</text>
+            <text class="float-left">{{item.reserve_date}}</text>
+          </view>
+          <view wx:if="{{item.reserve_status == '2'}}" class="content-row">
+            <text class="float-revoke">您的预约已被退订，退订原因为：{{item.revoke_reason}}</text>
+            <!-- <text class="float-revoke"></text> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

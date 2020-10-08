@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-banner": "/components/Banner/Banner",
+    "x-search": "/components/search/search"
+  }
+}

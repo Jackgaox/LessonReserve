@@ -1,0 +1,8 @@
+<view class="lesson-container-grid">
+  <block wx:for="{{lessonlist}}" wx:key="_id">
+    <view class="lesson-container" catchtap="onlessonTap" data-lesson_id="{{item.banner_lessons[0]._id}}">
+      <image class="lesson-img" src="{{item.banner_lessons[0].cover_cloudid}}"></image>
+      <text class="lesson-title">{{item.banner_lessons[0].lesson_name}}</text>
+    </view>
+  </block>
+</view>

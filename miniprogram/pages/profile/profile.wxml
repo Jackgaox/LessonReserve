@@ -1,0 +1,28 @@
+<view class="profile-header">
+  <v-button wx:if="{{!authorized}}" open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+    <l-avatar slot="img" icon-size="80" size="200" icon="user" text="点击登录" placement="bottom" />
+  </v-button>
+  <view wx:if="{{authorized}}" class="avatar-container avatar-position">
+    <l-avatar open-data="{{['userAvatarUrl','userNickName']}}" size="200" placement="bottom" />
+  </view>
+  <!-- <open-data type="userAvatarUrl"></open-data> -->
+  <!-- <open-data type="userNickName" class="nickname"></open-data> -->
+</view>
+<view class="nav">
+  <view class="nav-item">
+    <v-button class="content" bind:getuserinfo="onJumpToMyLesson" open-type='getUserInfo'>
+      <view slot="img">
+        <i class="iconfont icon-ziyuanldpi"></i>
+        <text class="text">我的课程</text>
+        <i class="iconfont icon-xiangyou"></i>
+      </view>
+    </v-button>
+  </view>
+  <view class="nav-item">
+    <view bind:tap="onJumpToAbout" class="content">
+      <i class="iconfont icon-ziyuanldpi"></i>
+      <text class="text">关于我们</text>
+      <i class="iconfont icon-xiangyou"></i>
+    </view>
+  </view>
+</view>

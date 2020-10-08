@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="container">
+    <image class="avatar" wx:if="{{!hasUserInfo && canIUse}}" src="cloud://jackgao-zghs4.6a61-jackgao-zghs4-1301607321/avatar/seeallfish-head.jpg"></image>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="motto">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="journey-container" catchtap="onTap">
+    <button class="journey" open-type="getUserInfo" bindgetuserinfo="getUserInfo">开启小程序之旅</button>
+  </view>
+</view>

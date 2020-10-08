@@ -1,0 +1,10 @@
+<view class="single-view-container">
+  <view class="lesson-container" catchtap="onlessonTap" data-_id="{{lesson._id}}">
+    <image class="lesson-img" src="{{lesson.cover_cloudid}}"></image>
+    <view class="content-block">
+      <text class="lesson-title">{{lesson.lesson_name}}</text>
+      <text class="lesson-content">{{lesson.description}}</text>
+      <text class="lesson-lecturer">主讲人：{{lesson.lecturer}}</text>
+    </view>
+  </view>
+</view>

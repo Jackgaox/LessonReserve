@@ -1,0 +1,44 @@
+/* pages/lessons/resultPage/resultPage.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-blank {
+  width: 100%;
+  height: 500rpx;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.group_text {
+  margin-top: 20rpx;
+  font-size: 60rpx;
+}
+
+.journey-container {
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.journey{
+    font-size:30rpx;
+    font-weight: bold;
+    line-height:80rpx;
+    color: #405f80;
+}

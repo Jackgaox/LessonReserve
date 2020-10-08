@@ -1,0 +1,50 @@
+/* components/searchsingle/searchsingle.wxss */
+.single-view-container{
+    float:left;
+    margin-bottom: 5rpx;
+    padding-left: 10rpx;
+    width:97%;
+    height: auto;
+}
+.lesson-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* 自适应高度 */
+  min-height:300rpx;
+  margin-top: 5rpx;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.lesson-img {
+  width: 200rpx;
+  height: 270rpx;
+  border-radius: 4px;
+}
+
+.lesson-title {
+  margin-bottom: 16rpx;
+  font-size: 32rpx;
+  color: #222;
+}
+
+.content-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rpx;
+  background-color: #fff;
+  width: 65%;
+  height: 270rpx;
+}
+
+.lesson-content {
+  margin-bottom: 16rpx;
+  font-size: 28rpx;
+}
+
+.lesson-lecturer {
+  position: absolute;
+  bottom: 0rpx;
+}

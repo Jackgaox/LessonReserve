@@ -1,0 +1,13 @@
+<!--miniprogram/pages/noResult/noResult.wxml-->
+<view class="no_res_container">
+  <!-- <view class="no_res_search">
+    <x-search bind:search="onSearch" />
+  </view> -->
+  <view class="no_res_view">
+    <image class="image" src="cloud://jackgao-zghs4.6a61-jackgao-zghs4-1301607321/index/田园犬2.png"></image>
+    <h4>没有相关数据,请尝试重新访问 </h4>
+  </view>
+</view>
+<view class="journey-container" bindtap="onTap">
+  <text class="journey">返回到主页</text>
+</view>

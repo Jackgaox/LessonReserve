@@ -1,0 +1,5 @@
+<view class="grid-container">
+  <block wx:for="{{lessonlist}}"  wx:key="_id">
+    <x-searchsingle lesson="{{item}}" />
+  </block>
+</view>

@@ -1,0 +1,38 @@
+/* @import "iconfont.wxss"; */
+
+.container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  padding-left: 5rpx;
+  position: relative;
+}
+
+.bar {
+  flex: 1;
+  height: 68rpx;
+  font-size: 28rpx;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  padding-left: 60rpx;
+}
+
+.search {
+  background: #d43c33;
+  color: #fff;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+
+.in-bar {
+  color: #999;
+}
+
+.find {
+  position: absolute;
+  top: 50%;
+  transform: translate(16rpx, -50%);
+  color: #9f9f9f;
+}

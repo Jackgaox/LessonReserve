@@ -1,0 +1,46 @@
+/* pages/lessons/ReservePage/ReservePage.wxss */
+.main-button {
+  color: #fff;
+  background: #307183;
+  border-radius: 0;
+  padding: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: none;
+}
+
+textarea {
+  height: 87px;
+}
+
+.form-block {
+  background: #f4f4f4;
+  width: 100%;
+  height: calc(100vh - 100rpx);
+}
+
+.form-label {
+  color: #888;
+  padding: 30rpx;
+  font-size: 14px;
+}
+
+.form-content {
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form-item {
+  padding: 10px 30rpx;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.form-item-label {
+  min-width: 70px;
+  padding-right: 10px;
+  color: #999;
+  flex: 0 0 auto;
+  font-size: 17px;
+}

@@ -1,0 +1,102 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "wxfb9f306b2669f71e",
+  "projectname": "CloudLessonReserve",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/profile/profile",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/minitest/minitest",
+          "pathName": "pages/minitest/minitest",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "pages/lesson-detail/lesson-detail",
+          "pathName": "pages/lesson-detail/lesson-detail",
+          "query": "lesson_id= baada3ac5ed733dc003c862756775a54",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/lesson-detail/lesson-detail",
+          "pathName": "pages/lesson-detail/lesson-detail",
+          "query": " lesson_id=\"baada3ac5ed733dc003c862756775a54\"",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/welcome/welcome",
+          "pathName": "pages/welcome/welcome",
+          "query": " lesson_id=\"baada3ac5ed733dc003c862756775a54\"",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<!--pages/lessons/resultPage/resultPage.wxml-->
+<view class="group-blank">
+</view>
+<view wx:if="{{!isSuccess}}" class="group">
+  <icon type="success" size="{{iconSize[4]}}" />
+  <text class="group_text" wx:if="{{!isSuccess}}"> 预定成功 </text>
+</view>
+<view wx:if="{{isSuccess}}" class="group">
+  <icon type="warn" size="{{iconSize[4]}}" />
+  <text class="group_text"> 预定失败，请重试 </text>
+</view>
+  <view class="journey-container" bindtap="onTap">
+    <text class="journey">返回到主页</text>
+  </view>

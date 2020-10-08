@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/lessons/lessons",
+    "pages/lesson-detail/lesson-detail",
+    "pages/search-list/search-list",
+    "pages/ReservePage/ReservePage",
+    "pages/profile/profile",
+    "pages/mylesson/mylesson",
+    "pages/resultPage/resultPage",
+    "pages/noResult/noResult",
+    "pages/minitest/minitest"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80",
+    "background-color": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#405f80",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/lessons/lessons",
+        "text": "课程选择",
+        "iconPath": "/images/tab/tablesson-unselect.png",
+        "selectedIconPath": "/images/tab/tablesson.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "会员中心",
+        "iconPath": "/images/tab/menbercenter_c.png",
+        "selectedIconPath": "/images/tab/menbercenter_s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:#33cd5f;
+}
+
+.avatar{
+    width:200rpx;
+    height:200rpx;
+    margin-top:160rpx;
+}
+
+.motto{
+    margin-top:100rpx;
+    font-size:32rpx;
+    font-weight: bold;
+}
+
+.journey-container{
+    margin-top: 200rpx;
+    border: 1px solid #405f80;
+    height: 80rpx;
+    border-radius: 5px;
+    text-align:center;
+    background-color:#33cd5f;
+}
+
+.journey{
+    font-size:22rpx;
+    font-weight: bold;
+    line-height:80rpx;
+    color: #405f80;
+     background-color:#33cd5f;
+}
+
+page{
+    height: 100%;
+    background-color:#33cd5f;
+}

@@ -1,0 +1,47 @@
+<!--pages/lessons/ReservePage/ReservePage.wxml-->
+<view class="form-block">
+  <view class="form-label">
+    报名预约
+  </view>
+  <view class="form-content">
+    <view class="form-item">
+      <text class="form-item-label">预约课程：
+      </text>
+      <text class="form-item-label">{{lesson_name}}
+      </text>
+    </view>
+    <view class="form-item">
+      <text class="form-item-label">您的姓名：
+      </text>
+      <input bindinput="onInputStudentName">
+      </input>
+    </view>
+    <view class="form-item">
+      <text class="form-item-label">手机号：
+      </text>
+      <input bindinput="onInputPhoneNumber">
+      </input>
+    </view>
+    <view class="form-item">
+      <text class="form-item-label">预约班次：
+      </text>
+      <text class="form-item-label">{{class_name}}
+      </text>
+    </view>
+  </view>
+  <view class="form-label">
+    留言
+  </view>
+  <view class="form-content">
+    <view class="form-item">
+      <textarea placeholder="有其他需求请填写" bindinput="onInputMessage">
+        {{message}}
+      </textarea>
+    </view>
+  </view>
+</view>
+<view>
+  <button catchtap="submitReserve" class="main-button normal-flex" hover-class="none" style="color: white;background-color:#2a7185;">
+    提交预约
+  </button>
+</view>
