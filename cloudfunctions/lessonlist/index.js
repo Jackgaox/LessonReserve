@@ -16,6 +16,7 @@ exports.main = async(event, context) => {
   app.router('lesson_info', async(ctx, next) => {
     if (event.keyword == 'ALL') {
       ctx.body = await db.collection('lesson_info')
+      .where({offline: '0'})
         .skip(event.start)
         .limit(event.count)
         .orderBy('_id', 'asc')
@@ -31,7 +32,8 @@ exports.main = async(event, context) => {
           lesson_name: new db.RegExp({
             regexp: keyword,
             options: 'i'
-          })
+          }),
+          offline: '0'
         }
       }
       ctx.body = await db.collection('lesson_info')

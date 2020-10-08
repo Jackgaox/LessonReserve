@@ -64,12 +64,22 @@ exports.main = async (event, context) => {
     ctx.body = db.collection('banner_to_lesson').aggregate()
       .lookup({
         from: 'lesson_info',
-        localField: 'lesson_id',
-        foreignField: '_id',
+        let: {
+          btl_lesson_id: '$lesson_id',
+        },
+        pipeline: $.pipeline()
+          .match(_.expr($.and([
+            $.eq(['$_id', '$$btl_lesson_id']),
+            $.eq(['$offline', '0']),
+          ])))
+          .done(),
         as: 'banner_lessons',
       })
       .match({
-        banner_id: event.banner_id
+        banner_id: event.banner_id,
+        banner_lessons: _.elemMatch({
+          offline: '0',
+        })
       })
       .sort({
         sort_id: 1,
