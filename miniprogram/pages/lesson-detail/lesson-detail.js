@@ -1,6 +1,7 @@
 import {
   formatTime,
-  validInput
+  validInput,
+  stringConvert
 } from '../../utils/util.js'
 let lessonClass = ""
 let ischeckedclass = false
@@ -99,6 +100,7 @@ Page({
       }
     }).then((res) => {
       let data = res.result.list[0]
+      data.description = stringConvert(data.description)
       this.setData({
         lessonData: data
       })
