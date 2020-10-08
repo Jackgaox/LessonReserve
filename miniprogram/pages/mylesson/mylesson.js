@@ -1,5 +1,9 @@
 // miniprogram/pages/mylesson/mylesson.js
-
+import {
+  formatTime,
+  validInput,
+  stringConvert
+} from '../../utils/util.js'
 const app = getApp()
 let MAX_LIMIT = 10
 Page({
@@ -32,6 +36,7 @@ Page({
           if (item.lesson_info[0] && item.lesson_info[0].description.length > 70) {
             item.lesson_info[0].description = item.lesson_info[0].description.substr(0, 60) + "..."
           }
+          item.lesson_info[0].description = stringConvert(item.lesson_info[0].description)
           mylessonlist.push(item)
         }
         this.setData({
